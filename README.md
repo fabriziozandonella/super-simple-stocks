@@ -68,6 +68,8 @@ The Service interface "SuperSimpleStocksService" provides the functionalities re
 ##### Project Structure
 ![SuperSimpleStocks project structure](SuperSimpleStocks/doc/project-structure.jpg)
 
+----------
+
 ##### Class diagram
 ![SuperSimpleStocks class diagram](SuperSimpleStocks/doc/class-diagram.jpg)
 
@@ -85,12 +87,13 @@ Using the command
 maven clean install
 ```
 maven will compile and will execute the test provided just for the SuperSimpleStocksService. Other tests used for the development will be ignored. 
-
+----------
 ###  Documentation
 [JavaDoc](https://github.com/fabriziozandonella/super-simple-stocks/tree/master/SuperSimpleStocks/doc) 
-
+----------
 ###  Future developments
 Convertion of the project as a Microservice, providing: 
  * a RESTful API,
  * a Messagge service for possible integration with other Microservices. 
  * a Back end using a noSql database such as MongoDB
+----------
