@@ -61,8 +61,6 @@ The Service interface "SuperSimpleStocksService" provides the functionalities re
 - getStockMap();
 - getStockBySymbol(Symbol symbol);
 
-##### Data layer
-
 
 > **Note:** Symbol is the Stock Symbol used as Stock id
 
