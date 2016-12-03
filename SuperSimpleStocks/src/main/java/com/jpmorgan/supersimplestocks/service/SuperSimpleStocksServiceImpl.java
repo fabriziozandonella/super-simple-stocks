@@ -157,9 +157,7 @@ public class SuperSimpleStocksServiceImpl implements SuperSimpleStocksService{
 	 * Calculates the GBCE All Share Index:
 	 * using the geometric mean of the Volume Weighted Stock Price for all stocks
 	 *
-	 * @param symbol 
-	 * @param minutes 
-	 * @return Volume Weighted Stock Price
+	 * @return
 	 * @throws Exception 
 	 */
 	public double gbceAllShareIndex() throws Exception {

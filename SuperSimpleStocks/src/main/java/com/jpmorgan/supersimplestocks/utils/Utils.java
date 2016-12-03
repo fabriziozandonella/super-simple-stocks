@@ -14,16 +14,17 @@ public final class Utils {
 
 	/**
 	 * 
-	 * @return  
+	 * @return  Date
 	 */
 	public static Date timeStamp(){
 		Calendar calendar = Calendar.getInstance();
 		return  calendar.getTime() ;
 	}
 	/**
+	 * Returns timestamp of past number of minutes
 	 * 
 	 * @param addMinutes
-	 * @return timestamp of past number of minutes
+	 * @return Date
 	 */
 	public static Date timeStamp(int addMinutes){
 		Calendar calendar = Calendar.getInstance();

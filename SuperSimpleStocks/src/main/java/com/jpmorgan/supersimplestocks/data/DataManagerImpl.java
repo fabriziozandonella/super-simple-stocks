@@ -46,10 +46,12 @@ public class DataManagerImpl implements DataManager{
 	}
 
 	/**
+	 * Returns the List of trades, given a stock, in past n minutes
+	 * minutes: is the range of the the minutes passed until now, if minutes = 0 returns all trades
 	 * 
-	 * @param symbol: the Symbol of a given Stock
-	 * @param minutes: is the range of the the minutes passed until now, if minutes = 0 returns all trades
-	 * @return the List of trades, given a stock, in past n minutes
+	 * @param symbol 
+	 * @param minutes 
+	 * @return 
 	 * @throws Exception       
 	 */
 	public ArrayList<Trade> getTradeList(Symbol symbol, int minutes) throws Exception {
