@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.13" icons="true" automaticImage="JPEG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true" 
+  router="FAN">  
+  <interface id="1" language="java" name="com.jpmorgan.supersimplestocks.data.DataManager" project="SuperSimpleStocks" 
+    file="/SuperSimpleStocks/src/main/java/com/jpmorgan/supersimplestocks/data/DataManager.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="231" x="369" y="284"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" language="java" name="com.jpmorgan.supersimplestocks.data.DataManagerImpl" project="SuperSimpleStocks" 
+    file="/SuperSimpleStocks/src/main/java/com/jpmorgan/supersimplestocks/data/DataManagerImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="238" x="823" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="com.jpmorgan.supersimplestocks.service.SuperSimpleStocksService" 
+    project="SuperSimpleStocks" 
+    file="/SuperSimpleStocks/src/main/java/com/jpmorgan/supersimplestocks/service/SuperSimpleStocksService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="248" x="81" y="284"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" language="java" name="com.jpmorgan.supersimplestocks.service.SuperSimpleStocksServiceImpl" 
+    project="SuperSimpleStocks" 
+    file="/SuperSimpleStocks/src/main/java/com/jpmorgan/supersimplestocks/service/SuperSimpleStocksServiceImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="248" x="265" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.jpmorgan.supersimplestocks.ApplicationConfig" project="SuperSimpleStocks" 
+    file="/SuperSimpleStocks/src/main/java/com/jpmorgan/supersimplestocks/ApplicationConfig.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="230" x="553" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.jpmorgan.supersimplestocks.utils.Utils" project="SuperSimpleStocks" 
+    file="/SuperSimpleStocks/src/main/java/com/jpmorgan/supersimplestocks/utils/Utils.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="184" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.jpmorgan.supersimplestocks.model.Trade" project="SuperSimpleStocks" 
+    file="/SuperSimpleStocks/src/main/java/com/jpmorgan/supersimplestocks/model/Trade.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="333" width="178" x="640" y="284"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.jpmorgan.supersimplestocks.model.Stock" project="SuperSimpleStocks" 
+    file="/SuperSimpleStocks/src/main/java/com/jpmorgan/supersimplestocks/model/Stock.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="333" width="178" x="839" y="657"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="9" language="java" name="com.jpmorgan.supersimplestocks.model.constants.Indicator" 
+    project="SuperSimpleStocks" 
+    file="/SuperSimpleStocks/src/main/java/com/jpmorgan/supersimplestocks/model/constants/Indicator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="222" x="577" y="657"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <enumeration id="10" language="java" name="com.jpmorgan.supersimplestocks.model.constants.Symbol" 
+    project="SuperSimpleStocks" 
+    file="/SuperSimpleStocks/src/main/java/com/jpmorgan/supersimplestocks/model/constants/Symbol.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="222" x="839" y="1030"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <enumeration id="11" language="java" name="com.jpmorgan.supersimplestocks.model.constants.Type" 
+    project="SuperSimpleStocks" 
+    file="/SuperSimpleStocks/src/main/java/com/jpmorgan/supersimplestocks/model/constants/Type.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="222" x="577" y="1030"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <association id="12">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="13" name="tradeList"/>      
+      <multiplicity id="14" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="15">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="16" name="stock"/>      
+      <multiplicity id="17" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="18">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <association id="19">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="20" name="indicator"/>      
+      <multiplicity id="21" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="22">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="23" name="type"/>      
+      <multiplicity id="24" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="25">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="26" name="dataManager"/>      
+      <multiplicity id="27" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="28">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="29" name="symbol"/>      
+      <multiplicity id="30" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="31">    
+    <bendpoint x="848" y="284"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="32" name="stockMap"/>      
+      <multiplicity id="33" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="34">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
