@@ -1,0 +1,6 @@
+com.jpmorgan.supersimplestocks
+com.jpmorgan.supersimplestocks.data
+com.jpmorgan.supersimplestocks.model
+com.jpmorgan.supersimplestocks.model.constants
+com.jpmorgan.supersimplestocks.service
+com.jpmorgan.supersimplestocks.utils
