@@ -77,10 +77,6 @@ The Service interface "SuperSimpleStocksService" provides the functionalities re
 
 ----------
 
-###  Assunptions
-
-###  Test
-
 ###  Execution
 SuperSimpleStocks  is a maven project, you can import into Eclipse as a maven project. 
 
