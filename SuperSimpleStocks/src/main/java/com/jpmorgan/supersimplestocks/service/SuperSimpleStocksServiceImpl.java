@@ -22,7 +22,7 @@ import com.jpmorgan.supersimplestocks.utils.Utils;
  * @author Fabrizio Zandonella
  *
  */
- 
+
 public class SuperSimpleStocksServiceImpl implements SuperSimpleStocksService{
 	private Logger logger = LogManager.getLogger(SuperSimpleStocksServiceImpl.class);
 
@@ -43,7 +43,7 @@ public class SuperSimpleStocksServiceImpl implements SuperSimpleStocksService{
 		double dy = 0.0;
 		try{
 			if(null==symbol ){
-				throw new Exception("symbol is null.");
+				throw new Exception("symbol is null");
 			}
 			if(price <= 0.0 ){
 				throw new Exception("price is 0");
@@ -79,13 +79,19 @@ public class SuperSimpleStocksServiceImpl implements SuperSimpleStocksService{
 		try{
 
 			if(null==symbol ){
-				throw new Exception("symbol is null.");
+				throw new Exception("symbol is null");
 			}
 			if(price <= 0.0 ){
-				throw new Exception("price is 0.0.");
+				throw new Exception("price is 0.0");
 			}		
-			
-			peRatio = price/dividendYield(symbol, price);
+
+			double dividend = dividendYield(symbol, price);
+
+			if(dividend == 0.0 ){
+				throw new Exception("dividend is 0.0");
+			}	
+
+			peRatio = price/dividend;
 
 		}catch(Exception ex){
 			logger.error("SuperSimpleStocksServiceImpl.priceEarningsRatio Error:" + ex.getStackTrace());
@@ -130,14 +136,14 @@ public class SuperSimpleStocksServiceImpl implements SuperSimpleStocksService{
 	public double volumeWeightedStockPrice(Symbol symbol, int minutes) throws Exception {
 		double iPQ = 0.0;
 		int iQ = 0;
-		
+
 		if(null==symbol ){
 			throw new Exception("symbol is null.");
 		}
 		if(minutes<0 ){
 			throw new Exception("minutes < 0.");
 		}
-		
+
 		ArrayList<Trade> tradeList = dataManager.getTradeList(symbol, minutes);
 
 		for(Trade trade : tradeList){
@@ -164,7 +170,7 @@ public class SuperSimpleStocksServiceImpl implements SuperSimpleStocksService{
 			gbce *= volumeWeightedStockPrice(symbol, 0);
 			rt++;
 		}
-	
+
 		return Math.pow(gbce, 1/(double) rt );
 	}
 

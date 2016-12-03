@@ -8,6 +8,7 @@ import com.jpmorgan.supersimplestocks.model.Stock;
 import com.jpmorgan.supersimplestocks.model.Trade;
 import com.jpmorgan.supersimplestocks.model.constants.Symbol;
 import com.jpmorgan.supersimplestocks.utils.Utils;
+
 /**
  * 
  * @author Fabrizio Zandonella
@@ -46,8 +47,8 @@ public class DataManagerImpl implements DataManager{
 
 	/**
 	 * 
-	 * @param symbol the Symbol of a given Stock
-	 * @param minutes is the range of the the minutes passed until now, if minutes = 0 returns all trades
+	 * @param symbol: the Symbol of a given Stock
+	 * @param minutes: is the range of the the minutes passed until now, if minutes = 0 returns all trades
 	 * @return the List of trades, given a stock, in past n minutes
 	 * @throws Exception       
 	 */
@@ -79,12 +80,14 @@ public class DataManagerImpl implements DataManager{
 	 * 
 	 */
 	public HashMap<Symbol, Stock> getStockMap() {
-
 		return stockMap;
 	}
 
 	/**
+	 * Returns the stock by symbol
 	 * 
+	 * @return 
+	 * @param symbol
 	 */
 	public Stock getStockBySymbol(Symbol symbol) {
 		return getStockMap().get(symbol);

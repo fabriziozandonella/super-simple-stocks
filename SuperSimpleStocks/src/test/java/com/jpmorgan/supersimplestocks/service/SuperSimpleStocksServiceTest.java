@@ -39,6 +39,8 @@ public class SuperSimpleStocksServiceTest {
 		logger.info("Dividend Yield - Stock GIN Price 55.00: " + s.dividendYield(Symbol.GIN, 55.00) );
 		assertTrue(s.dividendYield(Symbol.JOE, 22.15)>0.0);
 		logger.info("Dividend Yield - Stock JOE Price 22.15: " + s.dividendYield(Symbol.JOE, 22.15) );
+		assertTrue(s.dividendYield(Symbol.POP, 32.30)>=0.0);
+		logger.info("Dividend Yield - Stock POP Price 32.30: " + s.dividendYield(Symbol.POP, 32.30) );		
 		assertTrue(s.dividendYield(Symbol.TEA, 25.30)>=0.0);
 		logger.info("Dividend Yield - Stock TEA Price 25.30: " + s.dividendYield(Symbol.TEA, 25.30) );
 		logger.info("END testDividendYield");
@@ -48,15 +50,22 @@ public class SuperSimpleStocksServiceTest {
 	public void testPeRatio() throws Exception{
 		logger.info("START testPeRatio");
 		assertTrue(s.priceEarningsRatio(Symbol.ALE, 18.12)>0.0);
-		logger.info("PeRatio - Stock ALE Price 18.12: " + s.priceEarningsRatio(Symbol.TEA, 18.12) );
+		logger.info("PeRatio - Stock ALE Price 18.12: " + s.priceEarningsRatio(Symbol.ALE, 18.12) );
 		assertTrue(s.priceEarningsRatio(Symbol.GIN, 65.24)>0.0);
 		logger.info("PeRatio - Stock GIN Price 65.24: " + s.priceEarningsRatio(Symbol.GIN, 65.24) );
-		assertTrue(s.priceEarningsRatio(Symbol.JOE, 2.22)>0.0);
-		logger.info("PeRatio - Stock JOE Price 2.22: " + s.priceEarningsRatio(Symbol.JOE, 2.22) );		
-		assertTrue(s.priceEarningsRatio(Symbol.TEA, 34.24)>0.0);
-		logger.info("PeRatio - Stock JOE Price 34.24: " + s.priceEarningsRatio(Symbol.TEA, 34.24) );		
+		assertTrue(s.priceEarningsRatio(Symbol.JOE, 32.22)>0.0);
+		logger.info("PeRatio - Stock JOE Price 32.22: " + s.priceEarningsRatio(Symbol.JOE, 32.22) );		
+		assertTrue(s.priceEarningsRatio(Symbol.POP, 42.22)>0.0);
+		logger.info("PeRatio - Stock POP Price 42.22: " + s.priceEarningsRatio(Symbol.POP, 42.22) );					
 		logger.info("END testPeRatio");
 	}
+	
+	@Test(expected = Exception.class) 
+	public void testPeRatioDividendZero() throws Exception{
+		logger.info("START testPeRatioDividendZero");
+		s.priceEarningsRatio(Symbol.TEA, 34.24);
+		logger.info("END testPeRatioDividendZero");
+	}	
 
 	@Test
 	public void testInsTrade() throws Exception{
@@ -75,7 +84,7 @@ public class SuperSimpleStocksServiceTest {
 	@Test
 	public void testVolumeWeightedStockPrice() throws Exception{
 		logger.info("START testVolumeWeightedStockPrice");
-		logger.info("Sample trades loading");
+		logger.info("-- Sample trades loading --");
 		loadTradesExample();
 		assertTrue(s.volumeWeightedStockPrice(Symbol.ALE, 5)>0.0);
 		logger.info("Volume Weighted Stock Price Stock Symbol ALE: " + s.volumeWeightedStockPrice(Symbol.ALE, 5));
@@ -90,7 +99,7 @@ public class SuperSimpleStocksServiceTest {
 	@Test
 	public void testGbceAllShareIndex() throws Exception{
 		logger.info("START testGbceAllShareIndex");
-		logger.info("Sample trades loading");
+		logger.info("-- Sample trades loading --");
 		loadTradesExample();
 		assertTrue(s.gbceAllShareIndex()>0.0);
 		logger.info(" GBCE All Share Index: " + s.gbceAllShareIndex());
