@@ -46,14 +46,14 @@ The implementation of this solution is based on a service interface that provide
 
 The framework used is Spring, configured using ApplicationConfig and annotations.
 
-##### Service
+##### Service layer
 The Service interface "SuperSimpleStocksService" provides the functionalities requested:
  - dividendYield(Symbol symbol, double price)  
  - priceEarningsRatio(SymbolinsTrade(Trade trade)
  - volumeWeightedStockPrice(Symbol symbol, int minutes)
  - gbceAllShareIndex()
 
-##### Data
+##### Data layer
  The interface "DataManager" provides the data access and data management:
 - insTrade(Trade trade) throws Exception;
 - getTradeList();
@@ -61,16 +61,19 @@ The Service interface "SuperSimpleStocksService" provides the functionalities re
 - getStockMap();
 - getStockBySymbol(Symbol symbol);
 
+##### Data layer
+
+
 > **Note:** Symbol is the Stock Symbol used as Stock id
 
-
- **Project Structure**
- 
+----------
+##### Project Structure
 ![SuperSimpleStocks project structure](SuperSimpleStocks/doc/project-structure.jpg)
 
- **Class diagram**
+##### Class diagram
 ![SuperSimpleStocks class diagram](SuperSimpleStocks/doc/class-diagram.jpg)
 
+----------
 
 ###  Assunptions
 
