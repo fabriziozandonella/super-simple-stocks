@@ -41,7 +41,7 @@ Constraints & Notes
 SuperSimpleStocks application
 -------------
 
-####  Architecture
+###  Architecture
 The implementation of this solution is based on a service interface that provides the functionalities requested to the user. The back-end is based on a data-manager interface accessible from the service implementation. The objects modelled are pojos (plain old java objects) of "Stock" and "Trade".
 
 The framework used is Spring, configured using ApplicationConfig and annotations.
@@ -72,11 +72,11 @@ The Service interface "SuperSimpleStocksService" provides the functionalities re
 ![SuperSimpleStocks class diagram](SuperSimpleStocks/doc/class-diagram.jpg)
 
 
-####  Assunptions
+###  Assunptions
 
-####  Test
+###  Test
 
-####  Execution
+###  Execution
 SuperSimpleStocks  is a maven project, you can import into Eclipse as a maven project. 
 
 Using the command
@@ -85,10 +85,10 @@ maven clean install
 ```
 maven will compile and will execute the test provided just for the SuperSimpleStocksService. Other tests used for the development will be ignored. 
 
-####  Documentation
+###  Documentation
 [JavaDoc](https://github.com/fabriziozandonella/super-simple-stocks/tree/master/SuperSimpleStocks/doc) 
 
-####  Future developments
+###  Future developments
 Convertion of the project as a Microservice, providing: 
  * a RESTful API,
  * a Messagge service for possible integration with other Microservices. 
