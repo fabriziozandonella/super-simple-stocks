@@ -3,17 +3,17 @@
 Requirements
 -------------
 1. The Global Beverage Corporation Exchange is a new stock market trading in drinks companies.
-a. Your company is building the object-oriented system to run that trading.
-b. You have been assigned to build part of the core object model for a limited phase 1
+  - Your company is building the object-oriented system to run that trading.
+  - You have been assigned to build part of the core object model for a limited phase 1
 
 2. Provide the source code for an application that will: 
-	a. For a given stock:
-		i. Given any price as input, calculate the dividend yield
-		ii. Given any price as input, calculate the P/E Ratio
-		iii. Record a trade, with timestamp, quantity, buy or sell indicator and price
-		iv. Calculate Volume Weighted Stock Price based on trades in past 5 minutes
+- a. For a given stock:
+	- i. Given any price as input, calculate the dividend yield
+	- ii. Given any price as input, calculate the P/E Ratio
+	- iii. Record a trade, with timestamp, quantity, buy or sell indicator and price
+	- iv. Calculate Volume Weighted Stock Price based on trades in past 5 minutes
 			
-	b. Calculate the GBCE All Share Index using the geometric mean of the Volume Weighted Stock       Price for all stocks
+- b. Calculate the GBCE All Share Index using the geometric mean of the Volume Weighted Stock       Price for all stocks
 
 
 Constraints & Notes
@@ -46,14 +46,14 @@ The implementation of this solution is based on a service interface that provide
 
 The framework used is Spring, configured using ApplicationConfig and annotations.
 
- **Service **
+##### Service
 The Service interface "SuperSimpleStocksService" provides the functionalities requested:
  - dividendYield(Symbol symbol, double price)  
  - priceEarningsRatio(SymbolinsTrade(Trade trade)
  - volumeWeightedStockPrice(Symbol symbol, int minutes)
  - gbceAllShareIndex()
 
- **Data**
+##### Data
  The interface "DataManager" provides the data access and data management:
 - insTrade(Trade trade) throws Exception;
 - getTradeList();
@@ -80,8 +80,9 @@ The Service interface "SuperSimpleStocksService" provides the functionalities re
 SuperSimpleStocks  is a maven project, you can import into Eclipse as a maven project. 
 
 Using the command
-> maven clean install
-
+```
+maven clean install
+```
 maven will compile and will execute the test provided just for the SuperSimpleStocksService. Other tests used for the development will be ignored. 
 
 ####  Documentation
@@ -89,9 +90,6 @@ maven will compile and will execute the test provided just for the SuperSimpleSt
 
 ####  Future developments
 Convertion of the project as a Microservice, providing: 
-a RESTful API,
-a Messagge service for possible integration with other Microservices. 
-a Back end using a noSql database such as MongoDB
-
- 
-
+ * a RESTful API,
+ * a Messagge service for possible integration with other Microservices. 
+ * a Back end using a noSql database such as MongoDB
