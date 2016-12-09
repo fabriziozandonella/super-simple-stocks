@@ -1,8 +1,4 @@
-# Super Simple Stock Market
- 
-----------
-
-SuperSimpleStocks application
+#SuperSimpleStocks application
 -------------
 
 ###  Architecture
