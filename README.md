@@ -1,5 +1,7 @@
 #SuperSimpleStocks application
+
 ###(a test written for a Financial Company)
+
 
 ###  Architecture
 The implementation of this solution is based on a service interface that provides the functionalities requested to the user. The back-end is based on a data-manager interface accessible from the service implementation. The objects modelled are pojos (plain old java objects) of "Stock" and "Trade".
