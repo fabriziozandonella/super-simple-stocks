@@ -1,6 +1,6 @@
-#SuperSimpleStocks application
+# SuperSimpleStocks application
 
-###(a test written for a Financial Company)
+### (a test written for a Financial Company)
 
 
 ###  Architecture
